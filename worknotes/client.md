@@ -1,5 +1,9 @@
 #### 10/30/24; 1:04:04 PM by DW
 
+Instead of counting characters, we now count words. Much more of a writer's thing. 
+
+Added the user's name in a menu to the right edge of the menubar, with a command underneath that gets settings. This is the same UI as in Drummer and FeedLand. 
+
 Changed "Save" to "Backup" in Tools menu.
 
 #### 10/29/24; 12:48:41 PM by DW
