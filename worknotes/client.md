@@ -1,3 +1,7 @@
+#### 10/30/24; 1:04:04 PM by DW
+
+Changed "Save" to "Backup" in Tools menu.
+
 #### 10/29/24; 12:48:41 PM by DW
 
 Big changes in how bookmarks work. We manage them chronologically, by month. When we add a new draft, it goes at the top of the list for the month it was posted in. If the month doesn't exist, we create it. But you can reorganize, to have the items appear in different sections that you define. 
@@ -15,10 +19,6 @@ When there are no categories for a post, the status line just says <i>No Categor
 Removed commands from the main menu that are duplicated in the edit box.
 
 Arrows in edit box for get next and prev drafts, it should be easy to scroll through the posts.  
-
-* It's implemented and appears to work.
-
-* I absolutely hate the appearance. The icon arrangement is too dense. Probably can move the RSS feed link into the menu?
 
 Notes are <a href="https://github.com/scripting/wordlandSupport/issues/3">here</a>. 
 
