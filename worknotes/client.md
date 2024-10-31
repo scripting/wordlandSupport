@@ -1,3 +1,17 @@
+#### 10/31/24; 10:38:06 AM by DW
+
+Rebuilt bookmarks from database, new command in the Tools menu. In case you mess it up, you can start fresh. 
+
+* Or if there's a bug that causes you to lose your bookmarks. This happened to me the other day. I have no idea if there is some kind of bug or what. 
+
+Spell out Bookmarks in the name of the Bookmarks menu. Later if we need the space we can abbreviate the name. It's a very important feature and there's lots of room in the menubar. 
+
+Made more room for icons. The other side of the line is where you enter the title, but it scrolls as needed when typing. Very long titles might be a bit awkard, but I want those icons to feel comfortable, not cramped. divRightCell width changes from 170 to 200.
+
+Moved RSS icon into the local menu to free up space. 
+
+Tuned up the bottom message line. Previously every segment of the message had the same space. So "24 words" gets as much space as "Cats: User Interface". Now each item gets as much space as it needs, and what's constant is the spacing between them. This means we can probably add one or two more elements? But it's more rational.
+
 #### 10/30/24; 1:04:04 PM by DW
 
 Instead of counting characters, we now count words. Much more of a writer's thing. 
