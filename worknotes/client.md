@@ -1,5 +1,9 @@
 #### 11/1/24; 10:34:59 AM by DW
 
+When we delete a draft, it is now also deleted from the Bookmarks menu.
+
+The checkmark in the Bookmarks menu should now be correct when you click either of the arrows.
+
 rewrote deletePostCommand. 
 
 * Delete the draft first. If that works, delete the WordPress post. 
@@ -18,13 +22,15 @@ rewrote deletePostCommand.
 
 Removed <i>Set current website</i> command. Since we ask for the website when we first publish a post, there's no need to set this. The default website should become the last one you selected. 
 
-Moved Get user info command from the main menu to the system menu (the one all the way to the right).
+Moved <i>Get user info</i> command from the main menu to the system menu (the one all the way to the right).
 
 Rebuilt bookmarks from database, new command in the Tools menu. In case you mess it up, you can start fresh. 
 
-* Or if there's a bug that causes you to lose your bookmarks. This happened to me the other day. I have no idea if there is some kind of bug or what. 
+* Or if there's a bug that causes you to lose your bookmarks. 
 
-Spell out Bookmarks in the name of the Bookmarks menu. Later if we need the space we can abbreviate the name. It's a very important feature and there's lots of room in the menubar. 
+* This happened to me the other day. I have no idea if there is some kind of bug or what. 
+
+Spell out "Bookmarks" in the name of the Bookmarks menu. Later if we need the space we can abbreviate the name. It's a very important feature and there's lots of room in the menubar. 
 
 Made more room for icons. The other side of the line is where you enter the title, but it scrolls as needed when typing. Very long titles might be a bit awkard, but I want those icons to feel comfortable, not cramped. divRightCell width changes from 170 to 200.
 
