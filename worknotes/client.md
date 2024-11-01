@@ -1,5 +1,9 @@
 #### 10/31/24; 10:38:06 AM by DW
 
+Removed <i>Set current website</i> command. Since we ask for the website when we first publish a post, there's no need to set this. The default website should become the last one you selected. 
+
+Moved Get user info command from the main menu to the system menu (the one all the way to the right).
+
 Rebuilt bookmarks from database, new command in the Tools menu. In case you mess it up, you can start fresh. 
 
 * Or if there's a bug that causes you to lose your bookmarks. This happened to me the other day. I have no idea if there is some kind of bug or what. 
