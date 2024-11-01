@@ -1,3 +1,19 @@
+#### 11/1/24; 10:34:59 AM by DW
+
+rewrote deletePostCommand. 
+
+Delete the draft first. If that works, delete the WordPress post. 
+
+You want to find out if there's a problem deleting the draft before going ahead and deleting the WordPress post. 
+
+If deleting the draft fails, we put up a dialog and do nothing more. 
+
+If deleting the WP file fails, we don't put up a dialog, display the error message in the console.
+
+The reason we don't put up a dialog is that we're going to change the display after the user clicks OK. 
+
+I would ignore the message as a user and click OK because I want to get on with it. 
+
 #### 10/31/24; 10:38:06 AM by DW
 
 Removed <i>Set current website</i> command. Since we ask for the website when we first publish a post, there's no need to set this. The default website should become the last one you selected. 
