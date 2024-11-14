@@ -1,3 +1,13 @@
+#### 11/14/24; 10:44:45 AM by DW
+
+Upload image command in the main menu.
+
+Prompt asks what wordpress site you want to upload the image to.
+
+The command is in the new main menu.
+
+Also removed the upload image and upload podcast commands from the context menu.
+
 #### 11/13/24; 6:05:02 PM by DW
 
 Back after a long hiatus for the election. 
