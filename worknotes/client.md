@@ -1,4 +1,54 @@
+#### 11/13/24; 6:05:02 PM by DW
+
+Back after a long hiatus for the election. 
+
+It only took three days of intense bullshit to get image uploading working.
+
+How it works -- choose a command from the menu, it prompts you to choose an image from a local file. 
+
+It is uploaded to a wordpress site you choose. 
+
+The htmltext for the image is put on the clipboard.
+
+You can then paste it wherever you like. 
+
+Still a bit of finishing work to do tomorrow.
+
+A little <a href="https://daveverse.wordpress.com/2024/11/13/this-is-a-test-of-images/">demo</a>.
+
+#### 11/4/24; 10:55:11 AM by DW
+
+The Edit bookmark command in the side menu now opens the bookmarks editor with the cursor on the bookmark for the current post.
+
+Look at afterOpen in editBookmarksCommand.
+
+Changed some commands in the Tools menu. 
+
+Enabled new plus icon.
+
+Enabling left and right arrows.
+
+#### 11/3/24; 11:46:49 AM by DW
+
+Added a + icon to the icon line, and thus eliminated the need for the Menu at the top of the screen. It was the last remaining command.
+
+There's a new pref, appPrefs.flConfirmNewPost, and you can change it in the Settings command. 
+
+I wanted the area where you write the text of the post to be current when you create a new post, but not when you're looping through the posts, or choosing one from the bookmarks menu. So I added a new optional parameter to editDraft that determines whether we make it current, defaults to false, and pass it as true when clicking on the + sign.
+
+#### 11/2/24; 12:30:40 PM by DW
+
+We now use the array to implemented yesterday the left and right arrows in the text box. 
+
+When wordland booted up, it would show the previous draft, then switch to the latest draft. this is because editDraft tried to rebuild the bookmarks menu and it didn't exist yet. that caused an error. the chatlog code was interpreting it as an error in opening the draft, which had been properly opened. Solved by checking to see if the menu had been built before rebuilding it. 
+
 #### 11/1/24; 10:34:59 AM by DW
+
+myWordpress.getNextPrevArray () -- returns an array of id's of the user's drafts. 
+
+* we could reimplement the arrows so they don't require a hit to find the next or prev
+
+* but this isn't done yet.
 
 When we delete a draft, it is now also deleted from the Bookmarks menu.
 

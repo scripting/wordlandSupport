@@ -1,4 +1,20 @@
-10/31/24; 7:03:56 PM by DW
+#### 11/13/24; 8:32:46 AM by DW
+
+It took three full days to get uploading images to work. A lot of trial and error and guesswork, but the code works now, and today I'm going to clean it up and move on to other things, hopefully.
+
+Note that because we also provide an API that runs in the browser, no one will have to go through this to get functional code, the problem is solved at least for this context. 
+
+#### 11/10/24; 12:29:58 PM by DW
+
+Uploading images.
+
+#### 11/1/24; 10:35:37 AM by DW
+
+Added support for the nextPrevArray used to implement the arrows in WordLand. See getNextPrevArray.
+
+Released v0.5.5.
+
+#### 10/31/24; 7:03:56 PM by DW
 
 Increase the default config.maxCtDrafts to 1000. Previously it was 100. I'm hitting that limit when I rebuild the Bookmarks menu or backup my drafts. I don't know if we can have a limit, unless we have a limit of drafts for non-paying users. That comes later. 
 
