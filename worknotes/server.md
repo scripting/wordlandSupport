@@ -1,3 +1,27 @@
+#### 11/18/24; 11:34:35 AM by DW
+
+Turned off config.flConvertImagesToGutenberg.
+
+From the GitHub thread, there's a little bit left to do, but they're going to try to account for images in plain HTML, so let's see how that goes. 
+
+Basically we have to get the image id to agree with WordPress's idea of what its ID is. 
+
+Really have to find and read the docs to be sure I understand how it should work.
+
+#### 11/18/24; 10:23:32 AM by DW
+
+Read authorizedAccounts every minute from the file.
+
+New config value -- config.authorizedAccountsPath.
+
+Read the file it points to once a minute, if it exists, we replace config.authorizedAccounts with the JSON structure in the file.
+
+Makes it so you don't have to reboot to add an authorized user, just edit the contents of the file.
+
+If there's an error parsing the file, we display the error on the console, so if you make a mistake you see it in the log right away.
+
+Look in readAuthorizedAccounts.
+
 #### 11/13/24; 8:32:46 AM by DW
 
 It took three full days to get uploading images to work. A lot of trial and error and guesswork, but the code works now, and today I'm going to clean it up and move on to other things, hopefully.
