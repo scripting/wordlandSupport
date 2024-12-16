@@ -1,3 +1,17 @@
+#### 12/16/24; 9:38:33 AM by DW
+
+Replaced the dialog where you choose which website to publish your draft to. 
+
+Previously, we called currentWebsiteDialog from 
+
+* publishCommand which is invoked when the user clicks on the airplane icon 
+
+* newPostCommand when user chooses command from menu (but confusingly only if it's the first time you're choosing the command. this is vestigial, an old feature I never remembered to take out. going to have to think about this).
+
+* uploadImageCommand when user chooses command from menu
+
+It sets appPrefs.idLastSiteChosen, and it returns it as the second param to the callback
+
 #### 11/14/24; 10:44:45 AM by DW
 
 Upload image command in the main menu.
