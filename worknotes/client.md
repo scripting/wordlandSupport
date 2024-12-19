@@ -1,3 +1,7 @@
+#### 12/19/24; 10:30:51 AM by DW
+
+Tried to get the autoLink feature working, both by turning the option on when creating the MediumEditor object and by writing my own code with the help of ChatGPT. Neither worked sufficiently so I commented out the code. 
+
 #### 12/16/24; 9:38:33 AM by DW
 
 Replaced the dialog where you choose which website to publish your draft to. 
