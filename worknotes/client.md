@@ -1,4 +1,12 @@
+#### 12/21/24; 10:30:29 AM by DW
+
+Added audible clicks when the user clicks on an icon. Not sure I like it. 
+
 #### 12/19/24; 10:30:51 AM by DW
+
+After creating a new post, in the lower left corner instead of saying Draft, we say Choose a site. Click on it and you get to set the site for this post. You can get that out of the way when you're creating the post, or not -- if you want to get directly to writing. 
+
+Now it says PUBLISHING in the status area between the time you click the paper airplane icon and the speaker beeps when it's done. I needed visual feedback there. 
 
 Tried to get the autoLink feature working, both by turning the option on when creating the MediumEditor object and by writing my own code with the help of ChatGPT. Neither worked sufficiently so I commented out the code. 
 
