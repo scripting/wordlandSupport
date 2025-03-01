@@ -1,3 +1,53 @@
+#### 2/26/25; 9:49:12 AM by DW
+
+Adding a users table. I want to be able to gather metadata, right now I want to know what browsers people are using, so I know how important it is to get it working in each browser. Apparently there are problems in some versions of Safari, but I only have gotten one report. I need to see what's actually going on, and to have a way to gather other data. 
+
+See countUserHit function.
+
+The users table is documented on the <a href="https://github.com/scripting/wpIdentity/blob/main/docs/storage.md">docs/storage.md page</a>.
+
+#### 2/24/25; 9:26:16 AM by DW
+
+I want separate events for addPost and updatePost operations. 
+
+* Previously we were using "publish" for both events. So instead of calling both "publish" we'll just use the names of the functions that implement them.
+
+* Also want the title of the post to be included with both events. 
+
+#### 2/23/25; 12:38:27 PM by DW
+
+We now log publish operations. 
+
+#### 2/22/25; 9:08:07 AM by DW
+
+In readUserFile, we need to send a clear message back to the caller if the file they're looking for simply doesn't exist. That is not actually an error here, it happens with bookmarks.opml the first time a user signs on to WordLand. The change is in readUserFile.
+
+#### 1/24/25; 8:36:53 AM by DW
+
+If a user has a deleted WordPress website, convertSite will crash, trying to create a data structure for it. 
+
+Changes in getUserSites and convertSite. 
+
+#### 12/23/24; 5:22:22 PM by DW
+
+New call -- wordpressgettopusers, returns an array of the top users ranked by number of times their WordLand prefs.json file has been read, which happens when you first load the app. It doesn't measure activity, ie editing and publishing. 
+
+#### 12/23/24; 12:07:10 PM by DW
+
+The demo app was broken in several ways. It now works properly.
+
+* Setting serverAddress and urlChatLogSocket correctly at startup, don't depend on defaults in api2.js.
+
+* logOffWordpress was missing.
+
+* viewing the site list was broken because we weren't waiting for the site list to load in myWordpress.startup. Fixed it by reading the site list from the server when displaying the site list. I understand why I didn't want it to wait at startup, it's not something WordLand needs to display until the user asks to see the site list.
+
+* startTestPrefs call was commented out, uncommented, set number of tests to 5 instead of 60. 
+
+* There was a problem in saving prefs, something we had fixed in WordLand but the update had not made it into the demo app. 
+
+Hopefully from this point forward there will be no more breakage. We've got a good debugged app, WordLand, and it has to remain unbroken from here-out, so that bodes well, we hope, ymmv, ianal, mmlm. :-)
+
 #### 12/21/24; 11:47:17 AM by DW
 
 Add a log table using my new <a href="https://github.com/scripting/sqlLog">sqlLog</a> package.

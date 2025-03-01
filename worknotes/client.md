@@ -1,3 +1,59 @@
+#### 3/1/25; 12:01:12 PM by DW
+
+Got tab key to work between the title editor and the main edit box. 
+
+Removed the full selection of the text in the title editor. I never gave it a lot of thought, but I find it irritating. 
+
+I move the cursor to the end of the text for teh title editor, considered doing the same for the main editor, but it already has some hairy code for handling clicks with the mouse. That's a hole I don't want to dig now. ;-)
+
+#### 2/28/25; 10:44:18 AM by DW
+
+I'd like to get markdown mode to work.
+
+* when you click on the markdown icon, it should resize the text area after the switch
+
+* when you reload a draft that's in markdown mode the text gets screwed up. looks like newlines are missing?
+
+Cosmetic changes on the recent posts and recent users tables.
+
+#### 2/22/25; 10:13:26 AM by DW -- how to debug wordland
+
+It's on the peabody server, the name of the app is wordland.social. 
+
+It's confusing because there are a lot of other similarly named apps in the pp listing on peabody.
+
+At some point let's move wordland to another server, so that confusion is eliminated.
+
+#### 2/6/25; 5:10:51 PM by DW
+
+I keep losing my bookmarks. I want to get to the bottom of it. So I changed the way the call to myWordpress.readUserDataFile works. 
+
+Previously if it couldn't read the bookmarks it would initialize it to an empty outline. Terrible choice. 
+
+Now it puts up a very conspicuous alert dialog and when you click OK it reloads the page to try again. We're not going to let you lose your data, no matter what. We hope. :-)
+
+You might look at the server and see if there are any errors in the console. 
+
+#### 1/18/25; 11:05:53 AM by DW
+
+We now handle app params, as are received from Bingeworthy when the user clicked on the button for a program. They will write or edit a review for that program, and coordinate with Bingeworthy so it knows how to display it and store it in its database. 
+
+Look for "appParams" in code.js.
+
+#### 1/4/25; 5:22:02 PM by DW
+
+It was reported that when you accidentally double-click on the paper airplane icon you get two blog posts. 
+
+Added a new global, whenPublishStart, if it's less than 3 seconds when we start a publish, we just beep the speaker and return. 
+
+#### 1/2/25; 11:09:48 AM by DW
+
+Changed the default on flAudibleIconClicks to false. I had it turned off almost immediately and forgot it defaults on for new users. 
+
+#### 12/26/24; 10:25:36 AM by DW
+
+Finished topUsersDialog, also wrote a runModalDialog function that I've wished I'd had for years. Now I have to remember to use it and where I put it. ;-)
+
 #### 12/21/24; 10:30:29 AM by DW
 
 Added audible clicks when the user clicks on an icon. Not sure I like it. 
