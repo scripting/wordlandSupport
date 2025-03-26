@@ -1,3 +1,131 @@
+#### 3/26/25; 10:36:31 AM by DW
+
+New uploadImageCommand in the context menu. 
+
+The one in the main menu will stay for a few days, while we check out this new place.
+
+#### 3/23/25; 9:02:45 AM by DW -- how to release a new version of wordland
+
+wordland.social vs wordland.dev
+
+* wordland.social is the current public version, it gets the source code from http://scripting.com/code/wordland/
+
+* it's running on the "peabody" server.
+
+* wordland.dev is the next version, being developed, it gets its source from http://scripting.com/code/wordland/dev/
+
+* it's running on the "maine" server.
+
+To release a new version
+
+* Relaunch wordland.js on wordland.social.  
+
+* Before doing so npm update if there were changes to packages it uses.
+
+( wpidentity which is the server package, is updated automatically as the code changes.
+
+* Change the version number in config.json on wordland.social.
+
+* Change the heading at the top of this outline to http://scripting.com/code/wordland/ and click Save button.
+
+* Open up wordland.social and test. 
+
+* Sign off and on. Create a new post. Do a reasonable amount of editing. Review the new features. 
+
+* Update wpidentity and wordland repos on github.
+
+To change back to dev version
+
+* Change the version number in config.json on wordland.dev, and in the scripting.com-code-wpidentityshell subfolder of the nodeEditor folder on local machine.
+
+* Change the heading at the top of this outline to http://scripting.com/code/wordland/dev/ and click Save button.
+
+* Restart the local test server and access it in the browser at localhost:1408.
+
+#### 3/22/25; 8:50:30 AM by DW -- v0.51
+
+New commands:
+
+* setFeaturedImageCommand
+
+* setExcerptCommand
+
+New signon screen
+
+* Links to the fact sheet for the product.
+
+* Says Welcome to WordLand!
+
+#### 3/22/25; 10:22:09 AM by DW
+
+new commands in the context menu -- 
+
+set excerpt
+
+set featured image
+
+set excerpt is just a dialog and setting a new property of a draft
+
+the hard part is factoring the image uploading code so it can be told to use a specific blog, and to just return the id, not the html for the image.
+
+#### 3/15/25; 6:04:54 PM by DW
+
+New features in categories, written up in this <a href="https://github.com/scripting/wordlandSupport/issues/59">change note</a>.
+
+#### 3/14/25; 10:20:28 AM by DW -- how to release a new version of wordland
+
+To release a new version
+
+* Change the version number in config.json on wordland.social (it's on peabody).
+
+* Restart the server.
+
+* Change the heading at the top of this outline to http://scripting.com/code/wordland/ and click Save button.
+
+* Open up wordland.social and test. 
+
+* Sign off and on. Create a new post. Do a reasonable amount of editing. Review the new features. 
+
+To change back to dev version
+
+* Change the version number in config.json on wordland.dev, and in the scripting.com-code-wpidentityshell subfolder of the nodeEditor folder on local machine.
+
+* Change the heading at the top of this outline to http://scripting.com/code/wordland/dev/ and click Save button.
+
+* Restart the local test server and access it in the browser at localhost:1408.
+
+The new "dev" version of wordland on test.wordland.social.
+
+Change the top heading in this project to /scripting.com/code/wordland/dev/
+
+New macro: [%wordlandVersionString%] -- on test.wordland.social its value is "/dev", and on wordland.social it's ""
+
+The macro is used in includes in the head section of index.html that reference files in this project. 
+
+When you want to release a new version, change the top heading in this project to /scripting.com/code/wordland/.
+
+Make sure it works, and then switch it back. 
+
+Also, changed the home page from index.html to index2.html, so that we don't have to change anything in wordland.social right now. 
+
+When we're ready to do the first switchover, we'll need to change the value of urlServerHomePageSource in its config.json.
+
+#### 3/13/25; 11:09:39 AM by DW
+
+I need to be able to work on the code of wordland without impacting the people using the deployed version. 
+
+
+
+#### 3/3/25; 5:06:03 PM by DW
+
+Tuning up using WordLand as an external editor.
+
+* Allow the caller to specify the title of the post, and fill in the title editor with that string.
+
+* Learned about giving an app a name which you can then use in calls to window.open. This makes it so that instances of WordLand can be reused. 
+
+Defined clickInMainEditor function. Use it when you want to make sure the main edit box has the focus. 
+
 #### 3/1/25; 12:01:12 PM by DW
 
 Got tab key to work between the title editor and the main edit box. 
