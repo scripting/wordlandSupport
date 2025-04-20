@@ -1,3 +1,49 @@
+#### 4/20/25; 8:51:37 AM by DW
+
+Changes make it possible to load in FeedLand posts in a WordLand timeline and for the timeline to be displayed outside a modal dialog. 
+
+I'll be looking for an application for this, to get started on introducing the timeline for an RSS-only social web app.
+
+#### 4/16/25; 11:34:21 AM by DW
+
+When you set the version number you must set it in two places. I want it to be correct even if the JS doesn't run properly at startup. 
+
+* appConsts.version
+
+* in the html source at .divWordlandVersionNumber
+
+#### 4/14/25; 8:58:18 AM by DW
+
+Bookmarks menu is now optional, controlled by a setting, defaults false
+
+* I want to go in the direction of the timeline.
+
+* There is a bug in there, it also shows up in FeedLand, where the menu is emptied out. Someday I have to go in there, roll my sleeves up and find the problem. So that's another reason, it doesn't really work. But if people have been using it and like it, they can continue.
+
+Editor notifies timeline of update to a draft. 
+
+* Not just on publish, on any change that would cause the draft display in the timeline to change. 
+
+Should a click anywhere in a draft expand the body, or just a click in the body.
+
+* The problem comes up when you click the edit icon. Since its part of the draftviewer, it will expand the body, before it confirms you want to edit.
+
+I think it has to be just a click on the body. Makes the code much more manageable. And you definitely don't want it expanding when you click the edit icon.
+
+I'm back!
+
+* I've been working on the side on the Timeline feature for WordLand. Actually it's more general, it should be able to fit into a bunch of slots. But for now it's a single command off the main menu that opens up your timeline of WordLand drafts. 
+
+* I'm going to start making notes here about changes that relate to timelines, esp as integrated with WL.
+
+#### 4/13/25; 12:00:52 PM by DW
+
+In timeline, should a click anywhere in a draft expand the body, or just a click in the body.
+
+The problem comes up when you click the edit icon. Since its part of the draftviewer, it will expand the body, before it confirms you want to edit.
+
+I think it has to be just a click on the body. Makes the code much more manageable. And you definitely don't want it expanding when you click the edit icon.
+
 #### 3/26/25; 10:36:31 AM by DW
 
 New uploadImageCommand in the context menu. 
@@ -18,13 +64,15 @@ wordland.social vs wordland.dev
 
 To release a new version
 
+* Change the version number in config.json on wordland.social. (It's running on utica.)
+
 * Relaunch wordland.js on wordland.social.  
 
 * Before doing so npm update if there were changes to packages it uses.
 
 ( wpidentity which is the server package, is updated automatically as the code changes.
 
-* Change the version number in config.json on wordland.social.
+* Change the version in appConsts in code.js and in index2.html (displayed in the menubar)
 
 * Change the heading at the top of this outline to http://scripting.com/code/wordland/ and click Save button.
 
@@ -32,7 +80,7 @@ To release a new version
 
 * Sign off and on. Create a new post. Do a reasonable amount of editing. Review the new features. 
 
-* Update wpidentity and wordland repos on github.
+* Update wpidentity and wordland repos on github, if necessary.
 
 To change back to dev version
 
