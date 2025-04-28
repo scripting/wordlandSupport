@@ -1,3 +1,7 @@
+#### 4/23/25; 2:49:01 PM by DW
+
+Allow the user to change the operations in the popup text menu.
+
 #### 4/20/25; 8:51:37 AM by DW
 
 Changes make it possible to load in FeedLand posts in a WordLand timeline and for the timeline to be displayed outside a modal dialog. 

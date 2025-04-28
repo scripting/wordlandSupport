@@ -1,3 +1,15 @@
+#### 4/28/25; 9:02:20 AM by DW
+
+Fixed a problem in convertSite where the server would crash if it was converting a site that was not running on wordpress.com. The problem is that such sites don't contain an options object. 
+
+#### 4/27/25; 4:57:44 PM by DW
+
+In webSocketStartup we watch for errors and report them.
+
+#### 4/24/25; 5:45:59 PM by DW
+
+getSiteCategories now paginates, so if you have 300+ categories, we can handle it. 
+
 #### 3/26/25; 9:49:16 AM by DW
 
 In uploadImage, check for idSite == "undefined" -- return an error, don't try to upload. 
