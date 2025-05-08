@@ -1,3 +1,27 @@
+#### 5/7/25; 4:34:32 PM by DW
+
+The first time a user publishes a post, show a dialog offering them a chance to view it on the web. This helps the newbie understand what just happened. 
+
+The feature is written up <a href="https://this.how/wordland/dialogForPublish.opml">here</a>. 
+
+Stopped the spinner when saving resulted in an error. Otherwise it would keep spinning forever.
+
+#### 5/5/25; 10:09:28 AM by DW
+
+Have to back out of the Styles panel of the Settings command, I did it way too fast, each feature it added had to be tested in this very particular context. 
+
+The context is Medium Editor, Markdown and WordPress. None of which were designed to work with each other. We're lucky to have a core subset that works, enough to support writers.
+
+I think to get a really complete editor, you have to start with Markdown or HTML and work it out with WordPress. 
+
+I have made the style of H3 agree with the style of in the Baseline theme. 
+
+So here's what I'm doing.
+
+1. Removing the Styles panel in Settings (I'll save it in the source.opml file).
+
+2. Add H3 to the non-configurable menu, since we now have end-to-end support.
+
 #### 4/23/25; 2:49:01 PM by DW
 
 Allow the user to change the operations in the popup text menu.
@@ -68,7 +92,7 @@ wordland.social vs wordland.dev
 
 To release a new version
 
-* Change the version number in config.json on wordland.social. (It's running on utica.)
+* Change the version number in config.json on wordland.social. (It's running on utica.) (note i'm not doing this anymore, 5/5/25 by DW)
 
 * Relaunch wordland.js on wordland.social.  
 
