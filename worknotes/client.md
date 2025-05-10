@@ -1,3 +1,19 @@
+#### 5/9/25; 12:42:16 PM by DW
+
+Bookmarks changes
+
+New <i>Add bookmark</i> command to the Bookmarks menu.
+
+Removed <i>Add bookmark</i> and <i>Edit bookmarks</i> from the context menu, the commands are more easily accessed in the Bookmarks menu.
+
+#### 5/8/25; 9:50:16 AM by DW
+
+New dialog appears if you don't have any sites to publish to.
+
+Turn off automatic adding of drafts to the Bookmarks menu.
+
+New pref: appConsts.flKeepBookmarksUpdated, default false. 
+
 #### 5/7/25; 4:34:32 PM by DW
 
 The first time a user publishes a post, show a dialog offering them a chance to view it on the web. This helps the newbie understand what just happened. 
