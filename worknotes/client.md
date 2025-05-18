@@ -1,3 +1,11 @@
+#### 5/15/25; 4:56:22 PM by DW
+
+Rewrote the context menu <i>View RSS Feed</i> command. 
+
+#### 5/14/25; 9:19:42 AM by DW
+
+Made H3 in a timeline body the same style as it is in the editor, except font-size, things are quite a bit smaller in the timeline than they are in the editor.
+
 #### 5/9/25; 12:42:16 PM by DW
 
 Bookmarks changes
